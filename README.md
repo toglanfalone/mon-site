@@ -13,7 +13,7 @@
 **Date du dernier commit :** 7 avril 2026
 
 ## Lien du site en ligne
-[Voir la landing page sur GitHub Pages](https://github.com/toglanfalone/mon-site)
+[Voir la landing page sur GitHub Pages](https://toglanfalone.github.io/mon-site/)
 
 ## Description du projet
 - Page construite **desktop first**
