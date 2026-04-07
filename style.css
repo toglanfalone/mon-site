@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #dbe4ff);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+}
+
+.logo {
+  color: #3b5bff;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #3b5bff;
+}
+
+/* BOUTONS HEADER */
+.auth button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 1px solid #3b5bff;
+  background: transparent;
+  color: #3b5bff;
+}
+
+.btn-primary {
+  background: #3b5bff;
+  color: white;
+  border: none;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+}
+
+.hero-text {
+  flex: 1;
+  animation: fadeUp 1s ease;
+}
+
+/* TITRES */
+.hero-text span {
+  color: #3b5bff;
+  background: rgba(59,91,255,0.1);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.hero-text h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-text h3 {
+  color: #888;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+/* TEXTE */
+.hero-text p {
+  margin: 20px 0;
+  color: #444;
+  max-width: 420px;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: #3b5bff;
+  font-weight: bold;
+}
+
+/* BOUTON PRINCIPAL */
+.cta {
+  padding: 15px 25px;
+  background: #3b5bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(59,91,255,0.3);
+}
+
+.cta:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: #1c3dff;
+  box-shadow: 0 15px 30px rgba(59,91,255,0.5);
+}
+
+/* IMAGE */
+.hero-img img {
+  width: 420px;
+  animation: float 3s ease-in-out infinite;
+  transition: 0.5s;
+}
+
+.hero-img img:hover {
+  transform: scale(1.08) rotate(2deg);
+}
+
+/* ANIMATIONS */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
